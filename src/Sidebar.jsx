@@ -24,7 +24,7 @@ function Sidebar() {
             Home
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
-            <FiShoppingBag className='w-6 h-6 mr-2' />
+            <img src='./orders-sb.png' className='w-6 h-6 mr-2' />
             Orders
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
