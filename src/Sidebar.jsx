@@ -70,7 +70,15 @@ function Sidebar() {
           {/* Add more items with icons as needed */}
         </ul>
         </div>
-        <div className='mt-auto'>bottom part </div>
+        <div className='mt-auto bg-slate-800 flex flex-row py-2 '>
+            <div className='py-2 px-2'><img src='./wallet.png'/></div> 
+            <div className='flex flex-col'>
+                <div className='text-sm text-gray-400 font-light px-2 '>
+                    Available credits
+                </div>
+                <div className='px-2'>222.10</div>
+            </div>
+            </div>
     </div>
   )
 }
