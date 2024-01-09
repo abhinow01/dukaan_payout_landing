@@ -79,26 +79,30 @@ function Table() {
       const header = (
         <tr className="bg-gray-100">
           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-            Order Id
+            <span className="text-right">Order Id</span>
           </th>
-          <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+          <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
             Order Date
           </th>
-          <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+          <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
             Order Amount
           </th>
-          <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+          <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
             Transaction Fees
           </th>
         </tr>
       );
+      
     
       const dataRows = dummyData.map((item, index) => (
+        
         <tr key={index} className="bg-white">
-          <td className="px-6 py-4 whitespace-nowrap">{item.orderId}</td>
-          <td className="px-6 py-4 whitespace-nowrap">{item.orderDate}</td>
-          <td className="px-6 py-4 whitespace-nowrap">{item.orderAmount}</td>
-          <td className="px-6 py-4 whitespace-nowrap">{item.transactionFees}</td>
+          <td className="px-6 py-4 whitespace-nowrap">
+            <span className="text-blue-500">{item.orderId}</span>
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap text-right">{item.orderDate}</td>
+          <td className="px-6 py-4 whitespace-nowrap text-right">{item.orderAmount}</td>
+          <td className="px-6 py-4 whitespace-nowrap text-right">{item.transactionFees}</td>
         </tr>
       ));
     

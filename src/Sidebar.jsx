@@ -28,24 +28,28 @@ function Sidebar() {
             Orders
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
-            <FiPackage className='w-6 h-6 mr-2' />
+            <img src='./products.png' className='w-6 h-6 mr-2' />
             Products
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
-            <FiTruck className='w-6 h-6 mr-2' />
+            <img src='./delivery.png' className='w-6 h-6 mr-2' />
             Delivery
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
-          <FiMessageCircle className='w-6 h-6 mr-2' />
+          <img src='./speaker.png' className='w-6 h-6 mr-2' />
             Marketing
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
-            <FiBarChart2 className='w-6 h-6 mr-2' />
+            <img src='./analytics.png' className='w-6 h-6 mr-2' />
             Analytics
           </li>
           <li className='flex items-center py-2 px-4 text-white bg-gray-600'>
-            <FiDollarSign className='w-6 h-6 mr-2' />
+            <img src='./payments.png' className='w-6 h-6 mr-2' />
             Payouts
+          </li>
+          <li className='flex items-center py-2 px-4 text-gray-300'>
+            <img src='./tools.png' className='w-6 h-6 mr-2' />
+            Tools
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
             <FiPercent className='w-6 h-6 mr-2' />
