@@ -100,9 +100,9 @@ function Table() {
           <td className="px-6 py-4 whitespace-nowrap">
             <span className="text-blue-500">{item.orderId}</span>
           </td>
-          <td className="px-6 py-4 whitespace-nowrap text-right">{item.orderDate}</td>
-          <td className="px-6 py-4 whitespace-nowrap text-right">{item.orderAmount}</td>
-          <td className="px-6 py-4 whitespace-nowrap text-right">{item.transactionFees}</td>
+          <td className="px-6 py-4 whitespace-nowrap text-right font-light">{item.orderDate}</td>
+          <td className="px-6 py-4 whitespace-nowrap text-right font-light">{item.orderAmount}</td>
+          <td className="px-6 py-4 whitespace-nowrap text-right font-light">{item.transactionFees}</td>
         </tr>
       ));
     

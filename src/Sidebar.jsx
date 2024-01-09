@@ -52,7 +52,7 @@ function Sidebar() {
             Tools
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
-            <FiPercent className='w-6 h-6 mr-2' />
+            <img src='./discount.png' className='w-6 h-6 mr-2' />
             Discounts
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
@@ -60,11 +60,11 @@ function Sidebar() {
             Audience
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
-            <FiLayout className='w-6 h-6 mr-2' />
+            <img src='./appearance.png' className='w-6 h-6 mr-2' />
             Appearance
           </li>
           <li className='flex items-center py-2 px-4 text-gray-300'>
-            <FiLayers className='w-6 h-6 mr-2' />
+            <img src='./plugin.png' className='w-6 h-6 mr-2' />
             Plugins
           </li>
           {/* Add more items with icons as needed */}
