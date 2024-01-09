@@ -10,7 +10,7 @@ function Sidebar() {
         <div className='flex flex-col'>
             <div className='flex flex-row items-center justify-between'>
                 <div> Nishyan </div>
-                <div><RiArrowDropDownLine /></div>
+                <div className='px-10'><img src='./Chevron Down.png' /></div>
             </div>
             
             <div className='text-sm text-gray-400 underline'> <a href='#'>Visit store </a> </div>

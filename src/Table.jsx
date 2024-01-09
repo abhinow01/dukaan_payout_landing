@@ -1,8 +1,10 @@
 import React from 'react';
 import {  FiDownload } from 'react-icons/fi';
 import { TbArrowsSort } from "react-icons/tb";
-
+// import Pagination from './Pagination';
 function Table() {
+    const currentPage = 10;
+  const totalPages = 20;
     const dummyData = [
         {
           orderId: '#281209',
@@ -34,24 +36,24 @@ function Table() {
             orderAmount: '₹1278.23',
             transactionFees: '₹22',
           },
-          {
-            orderId: '#281209',
-            orderDate: '7 July, 2023',
-            orderAmount: '₹1278.23',
-            transactionFees: '₹22',
-          },
-          {
-            orderId: '#281209',
-            orderDate: '7 July, 2023',
-            orderAmount: '₹1278.23',
-            transactionFees: '₹22',
-          },
-          {
-            orderId: '#281209',
-            orderDate: '7 July, 2023',
-            orderAmount: '₹1278.23',
-            transactionFees: '₹22',
-          }
+        //   {
+        //     orderId: '#281209',
+        //     orderDate: '7 July, 2023',
+        //     orderAmount: '₹1278.23',
+        //     transactionFees: '₹22',
+        //   },
+        //   {
+        //     orderId: '#281209',
+        //     orderDate: '7 July, 2023',
+        //     orderAmount: '₹1278.23',
+        //     transactionFees: '₹22',
+        //   },
+        //   {
+        //     orderId: '#281209',
+        //     orderDate: '7 July, 2023',
+        //     orderAmount: '₹1278.23',
+        //     transactionFees: '₹22',
+        //   }
           
       ];
       const header = (
@@ -85,7 +87,7 @@ function Table() {
       ));
     
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto h-full pb-8">
       <div className="flex justify-between mb-4 bg-white">
         <div className="flex px-4 py-2">
           <input
@@ -99,21 +101,25 @@ function Table() {
             Sort <TbArrowsSort className="ml-1" />
           </button>
           <button className="bg-white px-4 py-2 flex items-center justify-center rounded-md ml-2">
-             <FiDownload className="ml-1" />
+            <FiDownload className="ml-1" />
           </button>
         </div>
       </div>
-      <table className="min-w-full">
+      <table className="w-full px-4 pt-3 pb-4 border border-gray-200">
         <thead>{header}</thead>
         <tbody className="divide-y divide-gray-200">
           {dataRows}
           {/* Add an extra empty row to ensure the last row renders correctly */}
-          <tr className="bg-white">
+          {/* <tr className="bg-white">
             <td colSpan="4" className="h-8"></td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
+      <div>
+        {/* <Pagination currentPage={currentPage} totalPages={totalPages} /> */}
+      </div>
     </div>
+
       );
     }
 

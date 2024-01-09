@@ -2,6 +2,7 @@ import React from 'react'
 import DashBoardStatsGrid from './DashBoardStatsGrid'
 import Table from './Table'
 function Dashboard() {
+    
   return (
     <div className='flex flex-col gap-4'>
         <div className='flex flex-row justify-between'>
@@ -15,6 +16,7 @@ function Dashboard() {
     <div className='flex flex-row gap-4 w-full bg-white'>
         <Table />
     </div>
+    {/* <div className="flex justify-center mt-4">{renderPagination()}</div> */}
     </div>
     
   )
