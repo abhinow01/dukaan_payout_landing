@@ -1,5 +1,6 @@
 import React from 'react'
 import { FiHome, FiShoppingBag, FiPackage, FiTruck, FiMessageCircle, FiBarChart2, FiDollarSign, FiPercent, FiUsers, FiLayout, FiLayers } from 'react-icons/fi';
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 function Sidebar() {
   return (
@@ -7,7 +8,11 @@ function Sidebar() {
        <div className='flex items-center gap-2 px-1 py-3'>
         <img src='./navbar.png' />
         <div className='flex flex-col'>
-            <div> Nishyan </div>
+            <div className='flex flex-row items-center justify-between'>
+                <div> Nishyan </div>
+                <div><RiArrowDropDownLine /></div>
+            </div>
+            
             <div className='text-sm text-gray-400 underline'> <a href='#'>Visit store </a> </div>
 
         </div>
