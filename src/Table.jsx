@@ -1,80 +1,58 @@
 import React from 'react';
-import { FiArrowDown, FiArrowUp, FiDownload } from 'react-icons/fi';
+import {  FiDownload } from 'react-icons/fi';
+import { TbArrowsSort } from "react-icons/tb";
 
 function Table() {
     const dummyData = [
         {
           orderId: '#281209',
           orderDate: '7 July, 2023',
-          orderAmount: 1278.23,
-          transactionFees: 22,
+          orderAmount: '₹1278.23',
+          transactionFees: '₹22',
         },
         {
             orderId: '#281209',
             orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
+            orderAmount: '₹1278.23',
+            transactionFees: '₹22',
           },
           {
             orderId: '#281209',
             orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
+            orderAmount: '₹1278.23',
+            transactionFees: '₹22',
           },
           {
             orderId: '#281209',
             orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
+            orderAmount: '₹1278.23',
+            transactionFees: '₹22',
           },
           {
             orderId: '#281209',
             orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
+            orderAmount: '₹1278.23',
+            transactionFees: '₹22',
           },
           {
             orderId: '#281209',
             orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
+            orderAmount: '₹1278.23',
+            transactionFees: '₹22',
           },
           {
             orderId: '#281209',
             orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
+            orderAmount: '₹1278.23',
+            transactionFees: '₹22',
           },
           {
             orderId: '#281209',
             orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
-          },
-          {
-            orderId: '#281209',
-            orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
-          },
-          {
-            orderId: '#281209',
-            orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
-          },
-          {
-            orderId: '#281209',
-            orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
-          },
-          {
-            orderId: '#281209',
-            orderDate: '7 July, 2023',
-            orderAmount: 1278.23,
-            transactionFees: 22,
+            orderAmount: '₹1278.23',
+            transactionFees: '₹22',
           }
+          
       ];
       const header = (
         <tr className="bg-gray-100">
@@ -109,19 +87,19 @@ function Table() {
     return (
         <div className="container mx-auto">
       <div className="flex justify-between mb-4 bg-white">
-        <div className="flex">
+        <div className="flex px-4 py-2">
           <input
             type="text"
             placeholder="Search"
             className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 mr-2"
           />
         </div>
-        <div className="flex">
-          <button className="bg-white px-4 py-2 flex items-center justify-center rounded-md" >
-            Sort <FiArrowUp className="ml-1" />
+        <div className="flex py-2 px-4">
+          <button className="bg-white px-4  flex items-center justify-center rounded-md border border-gray-200" >
+            Sort <TbArrowsSort className="ml-1" />
           </button>
           <button className="bg-white px-4 py-2 flex items-center justify-center rounded-md ml-2">
-            Download <FiDownload className="ml-1" />
+             <FiDownload className="ml-1" />
           </button>
         </div>
       </div>

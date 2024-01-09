@@ -6,7 +6,7 @@ function Header() {
       <div className="bg-white h-16 px-4 flex justify-between items-center border-b border-gray-200 w-full">
         {/* Title */}
         <div className="flex items-center">
-            <div className="text-lg font-semibold mr-2">Payouts</div>
+            <div className="text-lg font-normal mr-2">Payouts</div>
             <CiCircleQuestion className='text-gray-400 '/>
             <div className="text-sm text-gray-300 underline">How does it work?</div>
             </div>  
