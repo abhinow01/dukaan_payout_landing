@@ -5,3 +5,41 @@
 *{
     font-family:  sans-serif;
 }
+
+/* Styles for screens wider than 1536px */
+@media (min-width: 1536px) {
+    /* Example: Adjust the font size for large screens */
+    body {
+      font-size: 18px;
+    }
+    /* Add more CSS rules for larger screens here */
+  }
+  
+  /* Styles for screens wider than 1280px */
+  @media (min-width: 1280px) {
+    /* Example: Increase the width of the main container */
+    .main-container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    /* Add more CSS rules for wider screens here */
+  }
+  
+  /* Styles for screens wider than 768px */
+  @media (min-width: 768px) {
+    /* Example: Adjust padding for larger screens */
+    .content {
+      padding: 20px;
+    }
+    /* Add more CSS rules for medium-sized screens here */
+  }
+  
+  /* Styles for screens narrower than 640px */
+  @media (max-width: 640px) {
+    /* Example: Modify layout for smaller screens */
+    .sidebar {
+      display: none;
+    }
+    /* Add more CSS rules for smaller screens here */
+  }
+  
