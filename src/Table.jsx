@@ -114,7 +114,7 @@ function Table() {
           <button className="bg-white px-4  flex items-center justify-center rounded-md border border-gray-200" >
             Sort <TbArrowsSort className="ml-1" />
           </button>
-          <button className="bg-white px-4 py-2 flex items-center justify-center rounded-md ml-2">
+          <button className="bg-white px-2 py-2 flex items-center justify-center ml-2 rounded-md border border-gray-200">
             <FiDownload className="ml-1" />
           </button>
         </div>
