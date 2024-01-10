@@ -8,7 +8,7 @@ function Header() {
         <div className="flex items-center">
             <div className="text-lg font- mr-2">Payouts</div>
             <CiCircleQuestion className='text-gray-400 '/>
-            <div className="text-sm text-gray-300 underline">How does it work?</div>
+            <div className="text-sm text-gray-300 underline px-2">How does it work?</div>
             </div>  
         {/* Search Bar */}
         <div className="flex items-center relative">
