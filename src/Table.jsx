@@ -62,12 +62,12 @@ function Table() {
             orderAmount: '₹1278.23',
             transactionFees: '₹22',
           },
-          {
-            orderId: '#281209',
-            orderDate: '7 July, 2023',
-            orderAmount: '₹1278.23',
-            transactionFees: '₹22',
-          }
+        //   {
+        //     orderId: '#281209',
+        //     orderDate: '7 July, 2023',
+        //     orderAmount: '₹1278.23',
+        //     transactionFees: '₹22',
+        //   }
           
       ];
       const header = (
@@ -90,7 +90,7 @@ function Table() {
     
       const dataRows = dummyData.map((item, index) => (
         
-        <tr key={index} className="bg-white">
+        <tr key={index} className="bg-white border-t border-gray-200">
           <td className="px-6 py-2 whitespace-nowrap">
             <span className="text-blue-500">{item.orderId}</span>
           </td>
@@ -121,7 +121,7 @@ function Table() {
       </div>
       <table className="w-full px-4 pt-3 pb-4 border border-gray-200">
         <thead>{header}</thead>
-        <tbody className=" divide-gray-200">
+        <tbody className="divide-y divide-gray-200">
           {dataRows}
           {/* Add an extra empty row to ensure the last row renders correctly */}
           {/* <tr className="bg-white">
@@ -129,7 +129,7 @@ function Table() {
           </tr> */}
         </tbody>
       </table>
-      <div className='flex flex-row flex-wrap justify-center mx-auto px-24 py-4 pb-2'>
+      <div className='flex flex-row flex-wrap justify-center mx-auto px-24 py-4 '>
         {/* <Pagination currentPage={currentPage} totalPages={totalPages} /> */}
         <div className=""><button className="bg-white px-4  flex items-center justify-center rounded-md border border-gray-200"><GrFormPrevious /> Previous</button></div>
         <div className="px-2">1</div>
